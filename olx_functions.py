@@ -1,3 +1,6 @@
+from bs4 import BeautifulSoup
+import sqlite3
+
 def parse_price(price):
     parsed_price = price.replace(' ','').replace('zł', '').replace(',','.')
     return float(parsed_price)
